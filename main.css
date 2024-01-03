@@ -1,0 +1,131 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header-container {
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    margin: 0;
+}
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu li {
+    margin-left: 20px;
+    font-size: 11px;
+}
+.nav-menu li:first-child {
+    margin-left: 0;
+}
+
+.nav-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    text-decoration: underline;
+}
+nav {
+    background-color: white;
+    padding: 8px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #504f4f;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+    margin-right: 80px;
+    padding: 0;
+}
+nav li:last-child {
+    margin-right: 0;
+}
+nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+nav li a:hover {
+    background-color: #858383;
+    border-radius: 5px;
+}
+.amount {
+    position: relative;
+    margin-bottom: -200px;
+    display: flex;
+    left: 0;
+    background-color: white;
+    padding: 12px;
+    width: 100%;
+    font-weight: bold;
+}
+main {
+    margin: 20px;
+}
+h2 {
+    margin: 0;
+}
+p {
+    margin: 0;
+    padding: 10px 0;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px;
+}
+article {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 2px #ddd;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+h1 {
+    font-size: 20px;
+    width: 150px;
+    height: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0,5);
+}
+
+h1:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}

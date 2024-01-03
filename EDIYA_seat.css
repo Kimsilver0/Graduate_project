@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.top {
+    line-height: 24px;
+    font-size: 11px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: Cambria, Georgia, serif;
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.top:before,
+.top:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.top:after {
+    clear: both
+}
+
+.top a {
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    color: #333;
+    display: inline-block;
+}
+
+.top a:hover {
+    background: rgba(255,255,255,0.6)
+}
+
+.top span.right {
+    float: right
+}
+
+.top span.right a {
+    float: left;
+    display: block;
+}
+
+.movie-container {
+  margin: 20px 0;
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.set {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.seat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.table {
+    background-color: #444451; /* 테이블 배경색 */
+    border-radius: 5px; /* 테이블 모양을 둥글게 만듦 */
+    width: 25px; /* 테이블 너비 */
+    height: 20px; /* 테이블 높이 */
+    margin: 5px; /* 간격 설정 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* 그림자 효과 추가 */
+  }
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.table.selected {
+    background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: #fff;
+}
+
+.table.occupied {
+    background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.screen {
+    background-image: url('EDIYA 세로.jpg'); /* 이미지 파일 경로를 수정해야 합니다. */
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+    background-size: 100% 70px; /* 배경 이미지를 .screen 요소의 크기에 맞게 조절 */
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+    display: flex; /* Flex 컨테이너로 설정 */
+    flex-direction: column; /* 세로 방향으로 배열 */
+    align-items: center; /* 가운데 정렬 (가로 방향) */
+}
+
+.col .set {
+    display: flex; /* set 내부의 요소들을 Flex 컨테이너로 설정 */
+    flex-direction: column; /* set 내부의 요소들을 세로로 배열 */
+    align-items: center; /* 가운데 정렬 (세로 방향) */
+    margin-top: 20px;
+    margin-bottom: 20px; /* 세로로 간격을 주려면 원하는 값으로 조절하세요 */
+}
+
+p.text span {
+  color: #6feaf6;
+}
